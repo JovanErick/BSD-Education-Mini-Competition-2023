@@ -230,4 +230,10 @@ footer .footer-scroll button:hover,
 		flex-wrap: nowrap;
 	}
 }
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+    nav ul {
+        overflow-y: scroll;
+    }
+}
 /* RESPONSIVE BREAKPOINT END */
