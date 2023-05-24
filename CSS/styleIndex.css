@@ -1,0 +1,139 @@
+/* WELCOMING SECTION START  */
+section#welcoming {
+	display: flex;
+	width: 100%;
+	height: 85vh;
+	background: linear-gradient(rgba(26, 0, 28, 0.4), rgba(0, 0, 0, 0.35)),
+		url("../Image/background-welcome.webp") center center;
+	background-size: cover;
+}
+
+.welcoming-item {
+	margin: auto;
+	text-align: center;
+	color: #fff;
+}
+
+.welcoming-item h1.light {
+	font-family: "Poppins", sans-serif;
+	font-weight: 200;
+	font-size: clamp(1.3rem, 4vw, 2rem);
+	line-height: 15px;
+}
+
+.welcoming-item h1.bold {
+	font-family: "Montez", sans-serif;
+	font-size: clamp(2.75rem, 9.25vw, 5rem);
+	letter-spacing: 2px;
+}
+
+section#welcoming a.attribute {
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	bottom: 15%;
+	transform: translate(-50%, -15%);
+}
+/* WELCOMING SECTION END */
+
+/* SECTION ADVENTURE & EXPLORE START */
+section#journey, section#explore, section#article {
+	margin: 100px min(125px, 8vw);
+	font-family: "Poppins";
+}
+
+section#journey h2, section#explore h2, section#article h2 {
+	margin-bottom: 10px;
+	font-size: clamp(1.5rem, 5vw, 2rem);
+	color: #ffffff;
+}
+
+.destination-suggestion-item {
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: repeat(auto-fit, min(35vw, 200px));
+	gap: 40px;
+	z-index: -1;
+}
+
+.destination-suggestion-image {
+	position: relative;
+	background-color: white;
+	width: min(35vw, 200px);
+	aspect-ratio: 10 / 16;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.destination-suggestion-image img {
+	width: min(35vw, 200px);
+	aspect-ratio: 10 / 16;
+	background-color: #FFFFFF;
+	object-fit: cover;
+	transition: ease-out 0.25s;
+	opacity: 0.95;
+}
+
+.destination-suggestion-image img:hover,
+.destination-suggestion-image img:focus {
+	transform: scale(1.1);
+}
+
+.destination-suggestion-image p {
+	position: absolute;
+	bottom: 10px;
+	width: 125px;
+	font-size: clamp(0.75rem, 2.5vw, 1rem);
+	text-align: center;
+	color: #ffffff;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+section#explore a.attribute {
+	position: absolute;
+	margin-top: 10px;
+	text-align: center;
+	left: 50%;
+	transform: translateX(-50%);
+}
+/* SECTION EXPLORE END */
+
+/* ARTICLE START */
+.article-container {
+	background-color: #5e548e;
+	margin-bottom: 10vh;
+}
+
+.article-container img {
+	width: 100%;
+	height: 60vh;
+	object-fit: cover;
+}
+
+.article-container h3 {
+	margin: 8px max(1rem, 2vw);
+	font-size: clamp(1.1rem, 2.5vw, 1.65rem);
+	color: #FFFFFF;
+}
+
+.article-container p {
+	margin: 0 max(1rem, 2vw) 10px max(1rem, 2vw);
+	font-size: clamp(0.85rem, 1.5vw, 1rem);
+	font-weight: 300;
+	color: #FFFFFF;
+}
+
+.article-container button {
+	margin: 8px 0 25px max(1rem, 2vw);
+	padding: min(1.5vw, 15px);
+	font-family: 'Poppins', sans-serif;
+	border: 0;
+	cursor: pointer;
+	transition: all 0.25s;
+}
+
+.article-container button:hover, .article-container button:active {
+	box-shadow: 0 0 7px 1px white;
+}
+/* ARTICLE END */

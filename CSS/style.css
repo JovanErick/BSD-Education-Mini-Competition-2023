@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Montez&family=Parisienne&family=Poppins:wght@200;300;400;600&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	text-decoration: none;
+}
+
+body {
+	background-color: #231942;
+}
+
+/* IMAGE ATTRIBUTE START */
+a.attribute {
+	font-family: "Poppins", sans-serif;
+	font-size: clamp(0.85rem, 1.75vw, 1rem);
+	font-weight: 300;
+	color: #ffffff;
+	opacity: 0.3;
+}
+/* IMAGE ATTRIBUTE END */
+
+/* HEADER START */
+header {
+	display: flex;
+	position: absolute;
+	padding: 10px 0;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	background-color: transparent;
+	z-index: 10;
+}
+
+h3.logo {
+	margin-left: min(125px, 8vw);
+	font-family: "Parisienne", sans-serif;
+	font-size: clamp(1.5rem, 2.4vw, 4rem);
+	letter-spacing: 0.5px;
+	color: #ffffff;
+}
+
+h3.logo a {
+	color: #FFFFFF;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: row;
+	right: 0;
+	margin-right: min(125px, 8vw);
+	list-style: none;
+	gap: 2em;
+	z-index: 1;
+}
+
+nav ul li a {
+	cursor: pointer;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+	text-decoration: underline;
+}
+
+.mobile-navbar-toggle {
+	display: none;
+	position: absolute;
+	right: min(125px, 8vw);
+	font-size: 1.5rem;
+	color: #ffffff;
+	z-index: 10;
+}
+/* HEADER END */
+
+/* FOOTER START */
+footer {
+	display: flex;
+	flex-direction: column;
+	padding: 65px min(125px, 8vw);
+	background-color: #000000;
+}
+
+footer .footer-logo {
+	font-family: "Parisienne", sans-serif;
+	font-size: clamp(2rem, 5vw, 3rem);
+	color: #ffffff;
+	margin: 0 auto 55px auto;
+}
+
+footer .footer-item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+footer .footer-col {
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	margin-bottom: 100px;
+}
+
+footer .footer-col h3 {
+	font-size: clamp(1.25rem, 5vw, 1.5rem);
+	font-weight: 600;
+}
+
+footer .footer-col hr {
+	margin: 2.5px 0 10px;
+	width: 90px;
+	height: 0.5px;
+	background-color: white;
+}
+
+/* FOOTER COMPANY */
+footer .footer-company ul {
+	list-style: none;
+}
+
+footer .footer-company ul li {
+	margin-top: 5px;
+}
+
+footer .footer-company ul li a {
+	color: #ffffff;
+	transition: all 0.25s;
+}
+
+footer .footer-company ul li a:hover {
+	text-decoration: underline;
+}
+
+/* FOOTER SOCIAL */
+footer .footer-social a {
+	display: inline-block;
+	margin-right: 15px;
+	width: 2.25em;
+	aspect-ratio: 1;
+	text-align: center;
+	color: #1a001c;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: all 0.25s;
+}
+
+footer .footer-social a:hover {
+	box-shadow: 0 0 7px 1px white;
+}
+
+footer .footer-social i {
+	font-size: 1.5rem;
+	margin-top: 6px;
+}
+
+/* FOOTER EMAIL */
+footer .footer-news .email-input input {
+	padding: 12px 2.75vw;
+	border: 0;
+	border-radius: 30px 0 0 30px;
+	transition: ease 0.25s;
+}
+
+footer .footer-news .email-input input:hover,
+.email-input input:focus,
+.email-input button:hover,
+.email-input button:active {
+	box-shadow: 0 0 7px 1px white;
+	outline: none;
+}
+
+footer .footer-news .email-input button {
+	padding: 12px 1.5vw;
+	background-color: #ffffff;
+	color: #1a001c;
+	border: 0;
+	border-radius: 0 17.5px 17.5px 0;
+	cursor: pointer;
+}
+
+/* FOOTER TOP BUTTON */
+footer .footer-scroll button {
+	padding: 12px min(20vw, 5rem);
+	background-color: #ffffff;
+	color: #1a001c;
+	border: 0;
+	border-radius: 30px;
+	transition: all 0.25s;
+}
+
+footer .footer-scroll button:hover,
+.footer-scroll button:active {
+	box-shadow: 0 0 7px 1px white;
+}
+/* FOOTER END */
+
+/* RESPONSIVE BREAKPOINT START*/
+@media only screen and (max-width: 768px) {
+	.mobile-navbar-toggle {
+		display: block;
+	}
+
+	nav ul {
+		flex-direction: column;
+		padding: 35vh 2rem;
+		position: fixed;
+		width: 100%;
+		inset: 0 0 0 35%;
+		background-color: rgba(0, 0, 0, 0.5);
+		backdrop-filter: blur(1rem);
+		transform: translateX(100%);
+		transition: all 1.2s;
+		opacity: 0;
+	}
+
+	nav ul.slide {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	nav ul li a {
+		font-size: 1.45rem;
+	}
+
+	.footer-item {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+/* RESPONSIVE BREAKPOINT END */

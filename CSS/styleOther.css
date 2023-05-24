@@ -1,0 +1,64 @@
+header {
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    justify-content: space-around;
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+.shortcut {
+    background-color: #5e548e;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+.shortcut ul {
+    margin-left: 30px;
+}
+
+.shortcut ul li a {
+    color: #FFFFFF;
+}
+
+.shortcut ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section p {
+    margin-bottom: 10px;
+}
+
+figure {
+    margin-bottom: 35px;
+}
+
+figure img {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+}
+
+figcaption a {
+    color: #FFFFFF;
+    transition: all 0.5s;
+}
+
+figcaption a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 85%;
+    }
+}
